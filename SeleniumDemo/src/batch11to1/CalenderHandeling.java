@@ -16,7 +16,7 @@ public class CalenderHandeling {
 		boolean res=true;
 		while (res) {
 			String text=driver.findElement(By.xpath("//div[@class='react-datepicker__current-month']")).getText();
-			if(text.contains("uary 1999")) {
+			if(text.contains("February 1998")) {
 				driver.findElement(By.xpath("//div[text()='14']")).click();
 				res=false;
 			}
